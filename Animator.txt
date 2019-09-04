@@ -1,0 +1,28 @@
+interface TreeAnimator{
+  void fight();
+}
+
+interface SkyAnimator{
+  void swim();
+}
+
+interface BirdAnimator{
+  void fly();
+}
+
+class ActionCharacter {
+  
+}
+
+class Animator
+    implements TreeAnimator, SkyAnimator,BirdAnimator {
+ 	public void swim() {
+	Console.WriteLine("My SkyAnimator called");
+}
+  	public void fly() {
+	Console.WriteLine("My BirdAnimator called");
+}
+	public void fight() { 
+	Console.WriteLine("My TreeAnimator called");
+}
+}
